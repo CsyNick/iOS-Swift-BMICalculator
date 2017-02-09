@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         default:
             lblSuggestion?.text = "error"
         }
-        
+        view.endEditing(true)
     }
   
    
