@@ -10,6 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textHeight: UITextField!
+    
+    @IBOutlet weak var textWeight: UITextField!
+    
+    @IBOutlet weak var lblResult: UILabel!
+    
+    @IBOutlet weak var lblSuggestion: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +29,9 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func calcBMI(_ sender: AnyObject) {
+        
+    }
+  
 }
 
