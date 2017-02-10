@@ -31,16 +31,21 @@ class ViewController: UIViewController {
 
     @IBAction func calcBMI(_ sender: AnyObject) {
         
-        let Height = Double(txtHeight.text!)
-        let Weight = Double(txtWeight.text!)
-        let BMI = Double(Weight!/((Height!/100)*(Height!/100)))
+        let h = Double(txtHeight.text!)
+        let w = Double(txtWeight.text!)
+        
+         let BMI = Double(w!/((h!/100)*(h!/100)))
+       
         lblResult.text = String(BMI)
         
         switch BMI {
         case 0...18.48:
-            lblSuggestion?.text = "eee"
+            lblSuggestion?.text = "You need to eat more.."
+        case 18.48...24:
+            lblSuggestion?.text = "Perfect! Keep going!"
         default:
-            lblSuggestion?.text = "error"
+            lblSuggestion?.text = "I don't to talk anymore XD"
+    
         }
         view.endEditing(true)
     }
