@@ -57,5 +57,6 @@ class ViewController: UIViewController {
         txtHeight.resignFirstResponder()
         txtWeight.resignFirstResponder()
     }
+    //init
 }
 
