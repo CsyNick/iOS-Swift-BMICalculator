@@ -57,6 +57,12 @@ class ViewController: UIViewController {
         txtHeight.resignFirstResponder()
         txtWeight.resignFirstResponder()
     }
-    //init
+    @IBAction func reset(_ sender: AnyObject) {
+        txtHeight.text = ""
+        txtWeight.text = ""
+        lblResult.text = String(0.0)
+        lblSuggestion?.text = "Suggestions"
+    }
+
 }
 
